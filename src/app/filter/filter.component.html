@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="search-hero">
+            <input type="text" placeholder="search by id" (input)="test($event);">
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let hero of result">
+                    <td>{{hero.id}}</td>
+                    <td>{{hero.name}}</td>
+                    <td>{{hero.country}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
